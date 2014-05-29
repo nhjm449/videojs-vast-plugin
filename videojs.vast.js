@@ -156,9 +156,9 @@
       blocker.href = clickthrough || "#";
       blocker.target = "_blank";
       blocker.onclick = function() {
-        var clicktrackers = player.vastTracker.clickTrackingURLTemplate;
+        var clicktrackers = player.vastTracker.clickTrackingURLTemplates;
         if (clicktrackers) {
-          player.vastTracker.trackURLs([clicktrackers]);
+          player.vastTracker.trackURLs(clicktrackers);
         }
         player.trigger("adclick");
       };
